@@ -509,6 +509,14 @@ public class MainActivity extends AppCompatActivity {
      * Increase the score for homeruns to right Team.
      */
     public void homerun(View v) {
+
+        strikes = 0;
+        balls = 0;
+        foulball = 0;
+        displayStrikes(strikes);
+        displayBalls(balls);
+        displayFoulball(foulball);
+
         //check the current state before we display the screen
         if (turnSwitch.isChecked()) {
             scoreTeamB = scoreTeamB + runner + 1;
@@ -893,6 +901,8 @@ public class MainActivity extends AppCompatActivity {
         displayStrikes(strikes);
         balls = 0;
         displayBalls(balls);
+        foulball = 0;
+        displayFoulball(foulball);
 
         if (freeRunner == 4) {
             freeRunner = freeRunner - 1;
@@ -998,6 +1008,8 @@ public class MainActivity extends AppCompatActivity {
         displayStrikes(strikes);
         balls = 0;
         displayBalls(balls);
+        foulball = 0;
+        displayFoulball(foulball);
 
         if (runner == 0) {
             runner = 0;
