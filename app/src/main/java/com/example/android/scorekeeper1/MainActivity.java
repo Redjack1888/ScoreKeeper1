@@ -144,6 +144,12 @@ public class MainActivity extends AppCompatActivity {
                 scoreTeamA_In9 = scoreTeamA - scoreTeamA_In1 - scoreTeamA_In2 - scoreTeamA_In3 - scoreTeamA_In4 - scoreTeamA_In5 - scoreTeamA_In6 - scoreTeamA_In7 - scoreTeamA_In8;
                 displayForTeamA_In9(scoreTeamA_In9);
             }
+                    }
+        if (runner <= 0) {
+            runner = 0;
+            displayRunners(runner);
+        }
+        else {
             runner = runner - 1;
             displayRunners(runner);
         }
